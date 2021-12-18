@@ -1,0 +1,2 @@
+PPT to PDF
+	libreoffice --headless --invisible --convert-to pdf *.ppt

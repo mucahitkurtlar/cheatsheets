@@ -1,0 +1,36 @@
+FORMAT
+	Min	Hour	Day	Mon	Weekday
+	*	*	*	*	*	command to be executed
+	-	-	-	-	-
+	|	|	|	|	|
+	|	|	|	|	-------	Weekday	(0=Sun ... 6=Sat)
+	|	|	|	---------------	Motnh	(1 ... 12)
+	|	|	-----------------------	Day	(1 ... 31)
+	|	-------------------------------	Hour	(0 ... 23)
+	---------------------------------------	Minute	(0 ... 59)
+
+CRONTAB
+	# Adding task
+	echo "@reboot echo hi" | crontab
+
+	# Open in editor
+	crontab -e
+
+	# List tasks
+	crontab -l [-u user]
+
+OPERATORS
+	*	All values
+	,	Seperate values
+	-	Range of values
+	/	Divide a value into steps
+
+EXAMPLES
+	0 * * * *	Every hour
+	*/15 * * * *	Every 15 mins
+	0 */2 * * *	Every 2 hours
+	0 18 * * 0-6	Every week Mon-Sat at 6pm
+	10 2 * * 6,7	every Sat and Sun on 2:10am
+	0 0  * * 0	Every sunday midnight
+	@reboot		Every reboot	
+

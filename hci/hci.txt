@@ -1,0 +1,5 @@
+hciconfig hci0 up: 			hci0 cihazını çalıştır
+hcicofig hci0 down:			hci0 cihazını kapat
+hcitool scan:				Cihazları tara
+hcitool lescan:				BLE cihazları tara
+l2ping -i hci0 -c 5 B4:20:5B:AA:AA:AA	Cihazı pingle

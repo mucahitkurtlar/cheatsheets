@@ -1,0 +1,13 @@
+SIKIŞTIRMA
+	tar -cvzf Compressed.tar.gz UncompressedDirectoy
+	-c:	Create an archive
+	-z:	Compress with gzip
+	-v:	Makes tar talk a lot. Verbose output shows you all the files being archived and much.
+	-f:	Allows you to specify the filename of the archive.
+
+AÇMA
+	tar -xvzf name-of-archive.tar.gz
+	f:	This must be the last flag of the command, and the tar file must be immediately after. It tells tar the name and path of the compressed file.
+	z:	Tells tar to decompress the archive using gzip
+	x:	Tar can collect files or extract them. x does the latter.
+	v:	Makes tar talk a lot. Verbose output shows you all the files being extracted.
