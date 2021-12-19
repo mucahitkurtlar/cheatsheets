@@ -1,0 +1,2 @@
+Upload sorunu çözümü:
+	sudo chmod a+rw /dev/ttyUSB0
