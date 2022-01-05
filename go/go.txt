@@ -1,0 +1,5 @@
+Reduce binary size:
+	go build -ldflags "-w -s"
+
+Platform specific build:
+	GOOS="linux" GOARCH="amd64" go build
